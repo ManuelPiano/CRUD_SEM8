@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package estudiantecrud;
 
@@ -51,5 +52,19 @@ public class Estudiante {
     }
     
     
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package estudiantecrud;
+
+/**
+ *
+ * @author ITCA
+ */
+class Estudiante {
+>>>>>>> 568dd628ef1842cd27e348c78c467acd5aa6b7f0
     
 }
