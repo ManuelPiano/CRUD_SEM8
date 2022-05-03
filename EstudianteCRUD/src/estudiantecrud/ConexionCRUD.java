@@ -14,7 +14,7 @@ public class ConexionCRUD {
     try{
     Class.forName(driverConector);
     conexion = DriverManager.getConnection(servidor, usuario, clave);
-    }catch (ClassNotFoundException  | SQLException e){
+    }catch (ClassNotFoundException | SQLException e){
         System.out.println("Conexion fallida! Error! : " + e.getMessage());
     }
     }
@@ -26,10 +26,26 @@ public class ConexionCRUD {
     ConexionCRUD conectar = new ConexionCRUD();
     Connection cone = conectar.getConnection();
     try{
-    String sqlQueryStmt = "INSERT INTO " + tabla + " (" + camposTabla + ") VALUES (" + valoresCampos + ")";
+    String sqlQueryStmt = "INSERT INTO " + tabla + " (" + camposTabla + ") VALUES (" + valoresCampos + ");";
     Statement stmt;
     stmt = cone.createStatement();
+    stmt.executeUpdate(sqlQueryStmt);
+    stmt.close();
+    cone.close();
+        System.out.println("Registro guardado correctamente");
+    }catch(Exception e){
+        System.out.println(e.getMessage());
+    }
+    }
     
+    public void actualizarEliminarRegistro(String tabla, String valoresCamposNuesvos, String condicion){
+    ConexionCRUD conectar = new ConexionCRUD();
+    Connection cone = conectar.getConnection();
+    try{
+    Statement 
     }
     }
+    
+    //METODO PARA HACER LAS CONSULTAS 
+    
 }
