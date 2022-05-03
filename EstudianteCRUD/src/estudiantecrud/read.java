@@ -4,7 +4,7 @@ package estudiantecrud;
 import java.sql.SQLException;
 public class read {
     public read() throws SQLException {
-        System.out.println("<<Consulta de registros>>");
+        System.out.println("<< Consulta de registros >>");
         mostrarResultados();
     }
 
@@ -13,8 +13,8 @@ public class read {
             ConexionCRUD utilerias = new ConexionCRUD();
             String tabla = "tb_estudiante";
             String camposTabla = "*";
-            String condicionBusqueda="";
-            utilerias.desplegarRegistros(tabla, camposTabla, condicionBusqueda);
+            String condicionBusqueda=" ";
+            utilerias.desplegarRegistros(tabla, camposTabla , condicionBusqueda);
         } catch (SQLException ex) {
             System.out.println("Ha ocurrido el siguiente error: " + ex.getMessage());
         }finally {
