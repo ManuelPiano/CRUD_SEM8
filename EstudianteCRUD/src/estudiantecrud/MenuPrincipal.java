@@ -15,7 +15,7 @@ public class MenuPrincipal {
             //menu a desplegar
             System.out.println("*************************************");
             System.out.println("|       CRUD DE JAVA EN CONSOLA     |");
-            System.out.println("*************************************");
+            System.out.println("-------------------------------------");
             System.out.println("| Opciones:                         |");
             System.out.println("|           1. Crear Registros      |");
             System.out.println("|           2. Consultar Registros  |");
@@ -45,7 +45,7 @@ public class MenuPrincipal {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Seleccion Invalida!");
+                    System.out.println("Selección Inválida!");
                     break;         
         }  
     }
