@@ -19,7 +19,7 @@ public class Create {
         String tabla = "tb_estudiante";
         String camposTabla = "nom_estudiante, ape_estudiante,edad_estudiante";
         String valoresCampos = "'" + student.getNomEstudiante() + "','" + student.getApeEstudiante() + "','" + student.getEdadEstudiante() + "'";
-        ConexionCrud utilerias = new ConexionCrud();
+        ConexionCRUD utilerias = new ConexionCRUD();
         
         MenuPrincipal.desplegarMenu();
         
