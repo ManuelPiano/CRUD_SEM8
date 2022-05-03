@@ -26,9 +26,11 @@ public class ConexionCRUD {
         String camposTabla = "nom_estudiante, ape_estudiante, edad_estudiante";
         String valoresCampos = "'Jose', 'Flores', 15";
         String valoresCamposNuevos= "";
+        String campos="";
         String condicion= "id_estudiante = 1";
         conex.guardarRegistros(tabla,  camposTabla,  valoresCampos);
-        //conex.actualizarEliminarRegistro( tabla,  valoresCamposNuevos, condicion);
+        conex.actualizarEliminarRegistro(tabla, campos, condicion);
+        conex.actualizarEliminarRegistro( tabla,  valoresCamposNuevos, condicion);
     }
     
     public Connection getConnection(){

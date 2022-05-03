@@ -21,6 +21,7 @@ public class MenuPrincipal {
             System.out.println("|           2. Consultar Registros  |");
             System.out.println("|           3. Actualizar Registros |");
             System.out.println("|           4. Eliminar Registros   |");
+                  
             System.out.println("|           5. Salir                |");
             System.out.println("*************************************");
             System.out.println("Seleccionar Opcion: ");
@@ -31,13 +32,14 @@ public class MenuPrincipal {
                     Create create = new Create();
                     break;
                 case "2":
-                    //read read = new read();
+                    read read = new read();
                     break;
                 case "3":
-                    //Update update = new Update();
+                    //Update update = new Update();4
                     break;
+                            
                 case "4":
-                    //Delete delete = new Delete();
+                    Delete delete = new Delete();
                     break;
                 case "5":
                     System.exit(0);
