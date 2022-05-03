@@ -12,36 +12,33 @@ public class Update {
         System.out.println("<<ACTUALIZAR REGISTROS>>");
         
         System.out.println("ingresar id del registro a modificar ");
-        student.setId_Estudiante(leer.nextInt());
+        student.setId_Estudiante(Integer.parseInt(leer.nextLine()));
         
         //reingreso de datos para actualizar
-        String tablaBuscar = "tb_contacto";
+        String tablaBuscar = "tb_estudiante";
         String campoBuscar = "id_estudiante; carnet_estudiante; nom_estudiante; ape_estudiante; edad_estudiante";
         String condicionBuscar= "id_estudiante = " + student.getId_Estudiante();
         utilerias.desplegarRegistros(tablaBuscar, campoBuscar, condicionBuscar);
         
-        System.out.println("id_estudiante ");
-        student.setId_Estudiante(leer.next());
-        
         System.out.println("carnet estudiante");
-        student.setCarnet_estudiante(leer.next());
+        student.setCarnet_estudiante(leer.nextLine());
         
         System.out.println("nom_estudiante");
-        student.setNom_estudiante(leer.next());
+        student.setNom_estudiante(leer.nextLine());
         
         System.out.println("ape_estudiante");
-        student.setApe_estudiante(leer.next());
+        student.setApe_estudiante(leer.nextLine());
         
         System.out.println("edad_estudiante");
-        student.setEdad_estudiante(leer.next());
+        student.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
         
-        String tabla = "tb_contacto";
-        String camposValoresNuevos = "di_estidiante = " + student.getApe_estudiante() + "carnet_estudiante = " + student.getNom_estudiante() + "ape_estudiante = " + student.getEdad_estudiante() + " ";
+        String tabla = "tb_estudiante";
+        String camposValoresNuevos = "id_estudiante = '" + student.getId_Estudiante()+ "',carnet_estudiante = '" + student.getCarnet_estudiante()+ "',ape_estudiante = '" + student.getApe_estudiante() +"',nom_estudiante = '" + student.getNom_estudiante()+"'";
         
         utilerias.actualizarEliminarRegistro(tabla, camposValoresNuevos, condicionBuscar);
         System.out.println("MODIFICADO CORRECTAMENTE");
         
-        MenuPrincipal.desplegarMenu();                
+        MenuPrincipal.desplegarmenu();                
         
     }
     
