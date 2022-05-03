@@ -27,10 +27,10 @@ public class MenuPrincipal {
             //Despliegue de menu basado en la opcion seleccionada
             switch (opcionmenu) {
                 case "1":
-                    //Create create = new Create();
+                    Create create = new Create();
                     break;
                 case "2":
-                    //Read read = new Read();
+                    read read = new read();
                     break;
                 case "3":
                     //Update update = new Update();
