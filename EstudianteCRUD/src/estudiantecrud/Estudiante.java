@@ -4,7 +4,7 @@ package estudiantecrud;
 
 public class Estudiante {
     private int id_Estudiante;
-    private char carnet_estudiante;
+    private int carnet_estudiante;
     private String nom_estudiante;
     private String ape_estudiante;
     private int edad_estudiante;
@@ -18,11 +18,11 @@ public class Estudiante {
         this.id_Estudiante = id_Estudiante;
     }
 
-    public char getCarnet_estudiante() {
+    public int getCarnet_estudiante() {
         return carnet_estudiante;
     }
 
-    public void setCarnet_estudiante(char carnet_estudiante) {
+    public void setCarnet_estudiante(int carnet_estudiante) {
         this.carnet_estudiante = carnet_estudiante;
     }
 
