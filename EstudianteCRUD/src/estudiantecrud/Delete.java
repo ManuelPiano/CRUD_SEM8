@@ -10,7 +10,7 @@ public class Delete {
         ConexionCRUD utilerias = new ConexionCRUD();
         System.out.println("<< ELIMINAR REGISTRO >>");
         
-        System.out.println("Ingresar el id del registro: ");
+        System.out.println("Ingresar el id del registro que desea ELIMINAR: ");
         String id_estudianteEliminar = leer.next();
         
         //Reingreso de datos para actualizar 
