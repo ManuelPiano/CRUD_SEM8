@@ -31,13 +31,13 @@ public class MenuPrincipal {
                     Create create = new Create();
                     break;
                 case "2":
-                    read read = new read();
+                    //read read = new read();
                     break;
                 case "3":
                     //Update update = new Update();
                     break;
                 case "4":
-                    Delete delete = new Delete();
+                    //Delete delete = new Delete();
                     break;
                 case "5":
                     System.exit(0);
@@ -48,7 +48,4 @@ public class MenuPrincipal {
         }  
     }
 
-    static void desplegarMenu() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
