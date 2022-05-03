@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 
 package estudiantecrud;
 
 
 public class Estudiante {
     private int id_Estudiante;
-    private varchar(6)carnet_estudiante;
+    private char carnet_estudiante;
     private String nom_estudiante;
     private String ape_estudiante;
     private int edad_estudiante;
@@ -19,11 +18,11 @@ public class Estudiante {
         this.id_Estudiante = id_Estudiante;
     }
 
-    public String getCarnet_estudiante() {
+    public char getCarnet_estudiante() {
         return carnet_estudiante;
     }
 
-    public void setCarnet_estudiante(String carnet_estudiante) {
+    public void setCarnet_estudiante(char carnet_estudiante) {
         this.carnet_estudiante = carnet_estudiante;
     }
 
@@ -50,21 +49,5 @@ public class Estudiante {
     public void setEdad_estudiante(int edad_estudiante) {
         this.edad_estudiante = edad_estudiante;
     }
-    
-    
-=======
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package estudiantecrud;
-
-/**
- *
- * @author ITCA
- */
-class Estudiante {
->>>>>>> 568dd628ef1842cd27e348c78c467acd5aa6b7f0
     
 }

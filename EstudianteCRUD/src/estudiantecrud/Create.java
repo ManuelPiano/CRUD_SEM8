@@ -10,15 +10,15 @@ public class Create {
         System.out.println("<<Crear Registro>>");
         
         System.out.println("Nombre: ");
-        student.setNomEstudiante(leer.nextLine());
+        student.setNom_estudiante(leer.nextLine());
         System.out.println("Apellido: ");
-        student.setApeEstudiante(leer.nextLine());
+        student.setApe_estudiante(leer.nextLine());
         System.out.println("Edad: ");
-        student.setEdadEstudiante(leer.nextLine());
+        student.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
         
         String tabla = "tb_estudiante";
         String camposTabla = "nom_estudiante, ape_estudiante,edad_estudiante";
-        String valoresCampos = "'" + student.getNomEstudiante() + "','" + student.getApeEstudiante() + "','" + student.getEdadEstudiante() + "'";
+        String valoresCampos = "'" + student.getNom_estudiante() + "','" + student.getApe_estudiante() + "','" + student.getEdad_estudiante() + "'";
         ConexionCRUD utilerias = new ConexionCRUD();
         
         MenuPrincipal.desplegarMenu();
