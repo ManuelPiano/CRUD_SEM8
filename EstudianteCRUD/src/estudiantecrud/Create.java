@@ -1,5 +1,5 @@
 
-package EstudianteCrud;
+package estudiantecrud;
 
 import java.sql.SQLException;
 import java.util.Scanner;
