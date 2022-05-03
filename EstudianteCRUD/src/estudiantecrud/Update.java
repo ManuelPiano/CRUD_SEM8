@@ -9,7 +9,7 @@ public class Update {
         Scanner leer = new Scanner (System.in);
         Estudiante student = new Estudiante ();
         ConexionCRUD utilerias = new ConexionCRUD ();
-        System.out.println("<<ACTUALIZAR REGISTROS>>");
+        System.out.println("___ACTUALIZAR REGISTROS___");
         
         System.out.println("ingresar id del registro a modificar ");
         student.setId_Estudiante(Integer.parseInt(leer.nextLine()));

@@ -4,7 +4,7 @@ package estudiantecrud;
 import java.sql.SQLException;
 public class read {
     public read() throws SQLException {
-        System.out.println("<< Consulta de registros >>");
+        System.out.println(" ___Consulta de registros___");
         mostrarResultados();
     }
 

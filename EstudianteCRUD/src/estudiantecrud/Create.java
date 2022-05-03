@@ -7,7 +7,7 @@ public class Create {
     Create() throws SQLException {
         Scanner leer = new Scanner(System.in);
         Estudiante student = new Estudiante();
-        System.out.println("<<Crear Registro>>");
+        System.out.println("___Crear Registro___");
         System.out.println("Carnet");
         student.setCarnet_estudiante(leer.nextLine());
         System.out.println("Nombre: ");
