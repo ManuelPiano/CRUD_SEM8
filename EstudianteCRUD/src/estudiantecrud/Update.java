@@ -21,7 +21,7 @@ public class Update {
         utilerias.desplegarRegistros(tablaBuscar, campoBuscar, condicionBuscar);
         
         System.out.println("carnet estudiante");
-        student.setCarnet_estudiante(leer.nextLine());
+        student.setCarnet_estudiante(leer.next());
         
         System.out.println("nom_estudiante");
         student.setNom_estudiante(leer.nextLine());
@@ -30,7 +30,7 @@ public class Update {
         student.setApe_estudiante(leer.nextLine());
         
         System.out.println("edad_estudiante");
-        student.setEdad_estudiante(Integer.parseInt(leer.nextLine()));
+        student.setEdad_estudiante(Integer.parseInt(leer.next()));
         
         String tabla = "tb_estudiante";
         String camposValoresNuevos = "id_estudiante = '" + student.getId_Estudiante()+ "',carnet_estudiante = '" + student.getCarnet_estudiante()+ "',ape_estudiante = '" + student.getApe_estudiante() +"',nom_estudiante = '" + student.getNom_estudiante()+"'";
