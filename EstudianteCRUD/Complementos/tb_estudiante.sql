@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tb_estudiante` (
   `id_estudiante` int(11) NOT NULL,
+  `carnet_estudiante` varchar(6) DEFAULT NULL,
   `nom_estudiante` varchar(30) DEFAULT NULL,
   `ape_estudiante` varchar(30) DEFAULT NULL,
   `edad_estudiante` int(3) DEFAULT NULL
