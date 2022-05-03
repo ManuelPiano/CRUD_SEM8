@@ -11,6 +11,7 @@ public class MenuPrincipal {
  public static void desplegarmenu()throws SQLException {
             Scanner opcionSeleccionada =new Scanner(System.in);
             String opcionmenu;
+            
             //menu a desplegar
             System.out.println("*************************************");
             System.out.println("|       CRUD DE JAVA EN CONSOLA     |");
@@ -27,7 +28,7 @@ public class MenuPrincipal {
             //Despliegue de menu basado en la opcion seleccionada
             switch (opcionmenu) {
                 case "1":
-                    Create create = new Create();
+                    //Create create = new Create();
                     break;
                 case "2":
                     read read = new read();
