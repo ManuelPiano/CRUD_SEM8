@@ -38,11 +38,23 @@ public class ConexionCRUD {
     }
     }
     
-    public void actualizarEliminarRegistro(String tabla, String valoresCamposNuesvos, String condicion){
+    public void actualizarEliminarRegistro(String tabla, String valoresCamposNuevos, String condicion){
     ConexionCRUD conectar = new ConexionCRUD();
     Connection cone = conectar.getConnection();
     try{
-    Statement 
+    Statement stmt;
+    String sqlQueryStmt;
+    if(valoresCamposNuevos.isEmpty()){
+    sqlQueryStmt = "DELETE FROM " + tabla + " WHERE " + condicion + ";";
+    }else{
+    sqlQueryStmt = "UPDATE " + tabla + " SET " + valoresCamposNuevos + " WHERE " + condicion + ";";
+    }
+    stmt = cone.createStatement();
+    stmt.executeUpdate(sqlQueryStmt);
+    stmt.close();
+    cone.close();
+    }catch (SQLException ex){
+        System.out.println("Ha ocurrido el siguiente error: " + ex.getMessage());
     }
     }
     
