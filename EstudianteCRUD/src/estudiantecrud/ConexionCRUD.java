@@ -14,10 +14,23 @@ public class ConexionCRUD {
     try{
     Class.forName(driverConector);
     conexion = DriverManager.getConnection(servidor, usuario, clave);
+        System.out.println("Conexion exitosa");
     }catch (ClassNotFoundException | SQLException e){
         System.out.println("Conexion fallida! Error! : " + e.getMessage());
     }
     }
+    
+    public static void main(String[] args) {
+        ConexionCRUD conex = new ConexionCRUD();
+        String tabla = "tb_estudiante";
+        String camposTabla = "nom_estudiante, ape_estudiante, edad_estudiante";
+        String valoresCampos = "'Jose', 'Flores', 15";
+        String valoresCamposNuevos= "";
+        String condicion= "id_estudiante = 1";
+        //conex.guardarRegistros(tabla,  camposTabla,  valoresCampos);
+        conex.actualizarEliminarRegistro( tabla,  valoresCamposNuevos, condicion);
+    }
+    
     public Connection getConnection(){
     return conexion;
     }
